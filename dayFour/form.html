@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+</head>
+<body>
+  <h1>Form Elements</h1>
+
+  <form>
+    <!-- fieldset + legend -->
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="name">Full name:</label>
+      <input type="text" id="name" name="name" autocomplete="name" required />
+      <br />
+
+      <!-- input type="date" -->
+      <label for="dob">Date of birth:</label>
+      <input type="date" id="dob" name="dob" />
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferences</legend>
+
+      <!-- input type="color" -->
+      <label for="favColor">Favorite color:</label>
+      <input type="color" id="favColor" name="favColor" value="#3366ff" />
+      <br />
+
+      <!-- datalist -->
+      <label for="city">City (type to see suggestions):</label>
+      <input id="city" name="city" list="cities" placeholder="Start typing..." />
+      <datalist id="cities">
+        <option value="Jorhat"></option>
+        <option value="Guwahati"></option>
+        <option value="Dibrugarh"></option>
+        <option value="Delhi"></option>
+        <option value="Tinsukia"></option>
+      </datalist>
+      <br />
+
+      <!-- select with optgroup -->
+      <label for="dept">Choose a department:</label>
+      <select id="dept" name="dept">
+        <optgroup label="Engineering">
+          <option value="frontend">Frontend</option>
+          <option value="backend">Backend</option>
+          <option value="devops">DevOps</option>
+        </optgroup>
+        <optgroup label="Business">
+          <option value="marketing">Marketing</option>
+          <option value="sales">Sales</option>
+          <option value="finance">Finance</option>
+        </optgroup>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Attachments</legend>
+
+      <!-- input type="file" -->
+      <label for="file">Upload a file:</label>
+      <input type="file" id="file" name="file" />
+    </fieldset>
+
+    <p>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </p>
+  </form>
+</body>
+</html>
