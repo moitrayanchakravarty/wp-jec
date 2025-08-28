@@ -1,0 +1,33 @@
+
+
+@font-face {
+  font-family: 'Asimovian';
+  src: url('fonts/Asimovian-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Optional: If you have a bold or alternate weight, add similarly:
+@font-face {
+  font-family: 'Asimovian';
+  src: url('fonts/Asimovian-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+*/
+
+body {
+  font-family: 'Asimovian', sans-serif;
+  margin: 20px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-weight: normal; /* Asimovian is typically decorative, so bold may be same as normal weight */
+  color: #222;
+}
+
+p {
+  color: #444;
+}
+
