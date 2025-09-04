@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* The box that will demonstrate transitions */
+.box {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  background-color: steelblue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+
+  /* Transition effect: smooth changes on background-color and size */
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+/* What happens when the box is hovered */
+.box:hover {
+  background-color: tomato; /* color change */
+  transform: scale(1.2);   /* grow slightly */
+}
