@@ -1,0 +1,43 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;   
+  text-align: center;               
+  margin-top: 50px;                 
+}
+
+/* The box that will be animated */
+.animated-box {
+  width: 100px;                     /* Box width */
+  height: 100px;                    /* Box height */
+  background-color: royalblue;      /* Initial background color */
+  margin: 50px auto;                /* Center horizontally with top/bottom margin */
+  border-radius: 8px;               /* Rounded corners */
+
+  /* Apply the animation */
+  animation: bounceAndFade 2s infinite ease-in-out;
+}
+
+/* Define keyframes for bounce + fade animation */
+@keyframes bounceAndFade {
+  0% {
+    transform: translateY(0) scale(1);      /* Starting position */
+    opacity: 1;                             /* Fully visible */
+    background-color: royalblue;            /* Starting color */
+  }
+  30% {
+    transform: translateY(-100px) scale(1.1); /* Move up and slightly grow */
+    opacity: 0.7;                             /* Slightly transparent */
+    background-color: mediumseagreen;         /* Midway color */
+  }
+  60% {
+    transform: translateY(0) scale(0.9);     /* Back to baseline, slightly smaller */
+    opacity: 0.9;                             /* Nearly visible */
+    background-color: orange;                 /* Another color */
+  }
+  100% {
+    transform: translateY(-50px) scale(1);   /* Final upward bounce */
+    opacity: 1;                              /* Fully visible again */
+    background-color: crimson;               /* Final color */
+  }
+}
+
