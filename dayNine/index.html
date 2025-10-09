@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Details Form</title>
+</head>
+<body>
+    <h2>Enter Credit/Debit Card Details</h2>
+    <form id="cardForm" onsubmit="return validateForm()">
+        <!-- Name Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <!-- Card Number Field -->
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber"><br><br>
+
+        <!-- Expiry Date Fields -->
+        <label for="expiryMonth">Expiry Month (1-12):</label>
+        <input type="text" id="expiryMonth" name="expiryMonth"><br><br>
+
+        <label for="expiryYear">Expiry Year (2 digits):</label>
+        <input type="text" id="expiryYear" name="expiryYear"><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Link JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
+
